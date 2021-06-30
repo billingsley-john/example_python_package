@@ -1,7 +1,7 @@
 
 FROM continuumio/miniconda3:4.9.2
 
-ARG compile_cores=6
+ARG compile_cores=1
 
 RUN apt-get --yes update && apt-get --yes upgrade
 
