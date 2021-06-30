@@ -19,3 +19,8 @@ RUN conda install -c conda-forge -c python python=3.8 && \
 
 COPY run_tests.sh run_tests.sh
 COPY tests tests/
+
+COPY example_python_package example_python_package/
+COPY setup.py setup.py
+
+RUN python setup.py install
