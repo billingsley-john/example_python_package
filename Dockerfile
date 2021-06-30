@@ -16,3 +16,5 @@ RUN conda install -c conda-forge -c python python=3.8 && \
     # change to clone repo and pip install locally
     pip install paramak && \
     conda clean -afy
+
+COPY run_tests.sh run_tests.sh
