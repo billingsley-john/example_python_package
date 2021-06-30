@@ -6,7 +6,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="example_python_package",
-    version="0.0.1",
+    version="0.0.2",
     author="billingsley-john-testing",
     author_email="jhnbllngsly@gmail.com",
     description="Example python package",
