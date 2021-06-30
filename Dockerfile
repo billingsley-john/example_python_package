@@ -1,7 +1,7 @@
 
 FROM continuumio/miniconda3:4.9.2
 
-ARG compile_cores=6
+ARG compile_cores=1
 
 RUN apt-get --yes update && apt-get --yes upgrade
 
@@ -16,3 +16,12 @@ RUN conda install -c conda-forge -c python python=3.8 && \
     # change to clone repo and pip install locally
     pip install paramak && \
     conda clean -afy
+
+COPY run_tests.sh run_tests.sh
+COPY tests tests/
+
+COPY README.md README.md
+COPY example_python_package example_python_package/
+COPY setup.py setup.py
+
+RUN python setup.py install
