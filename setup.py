@@ -7,9 +7,10 @@ with open("README.md", "r") as f:
 setuptools.setup(
     name="example_python_package",
     version="0.0.1",
-    author="billingsley-john",
+    author="billingsley-john-testing",
+    author_email="jhnbllngsly@gmail.com",
     description="Example python package",
     long_description=long_description,
     url="https://github.com/billingsley-john/example_python_package",
-    packages=["example_python_package"]   # can also use setuptools.find_packages()
+    packages=setuptools.find_packages()
 )
