@@ -5,8 +5,8 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setuptools.setup(
-    name="example_python_package",
-    version="0.0.2",
+    name="example_python_package_billingsley",
+    version="0.0.3",
     author="billingsley-john-testing",
     author_email="jhnbllngsly@gmail.com",
     description="Example python package",
